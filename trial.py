@@ -9,4 +9,4 @@ trial = """<script src="//code.tidio.co/29ahjkkgzjmufusyxfai4rhrqquki8xg.js" asy
 
 with col2:
   # Execute your app
-  html(trial, height=600)
+  html(trial,width=980, height=600)
