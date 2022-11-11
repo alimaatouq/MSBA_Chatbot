@@ -5,4 +5,4 @@ st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow
 
 trial = """<script src="//code.tidio.co/29ahjkkgzjmufusyxfai4rhrqquki8xg.js" async></script>"""
 # Execute your app
-html(trial, width=980, height=600)
+html(trial, height=600)
