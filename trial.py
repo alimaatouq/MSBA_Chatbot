@@ -5,16 +5,9 @@ import hydralit_components as hc
 st.set_page_config(layout="wide", page_icon= "🤖")
 st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
 
-over_theme = {'txc_inactive': 'white','menu_background':'#ECE4F5', 'option_active':'white'}
+over_theme = {'txc_inactive': '#ECE4F5','menu_background':'#ECE4F5', 'option_active':'#ECE4F5'}
 
-menu_data = [
-    {'label': "Counties", 'icon': 'bi bi-bar-chart-line'},
-    {'label': 'California', 'icon': '🇺🇸'},
-    {'label': 'Vaccines', 'icon': '💉'},
-    {'label': 'Health Equity', 'icon': '⚖️'},
-    {'label':"Overview", 'icon':'🔍'}]
-
-menu_id = hc.nav_bar( menu_definition=menu_data,
+menu_id = hc.nav_bar(
                      override_theme=over_theme,
     hide_streamlit_markers=True,
     sticky_nav=True, #at the top or not
