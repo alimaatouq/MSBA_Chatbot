@@ -1,7 +1,18 @@
 import streamlit as st
 from streamlit.components.v1 import html
+import hydralit_components as hc
+
 st.set_page_config(layout="wide", page_icon= "🤖")
 st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
+
+over_theme = {'txc_inactive': 'white','menu_background':'#ECE4F5', 'option_active':'white'}
+
+menu_id = hc.nav_bar(override_theme=over_theme,
+    hide_streamlit_markers=True,
+    sticky_nav=True, #at the top or not
+    sticky_mode='sticky', #jumpy or not-jumpy, but sticky or pinned
+)
+
 def get_base64_of_bin_file(bin_file):
     """
     function to read png file
