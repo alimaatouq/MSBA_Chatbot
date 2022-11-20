@@ -17,7 +17,6 @@ st.markdown("""
 </style>
 """,unsafe_allow_html=True)
 
-st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
 
 padding = 0
 st.markdown(f""" <style>
