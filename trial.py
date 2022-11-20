@@ -3,7 +3,6 @@ from streamlit.components.v1 import html
 import hydralit_components as hc
 
 st.set_page_config(layout="wide", page_icon= "🤖")
-st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
 
 st.markdown("""
 <style>
@@ -17,6 +16,9 @@ st.markdown("""
     }
 </style>
 """,unsafe_allow_html=True)
+
+st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
+
 
 def get_base64_of_bin_file(bin_file):
     """
