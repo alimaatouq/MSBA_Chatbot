@@ -11,5 +11,5 @@ with col2:
   # Execute your app
   html(trial, height=600)
   
-with col2:
-  st.markdown("Your MSBA Assistant is a click away!")
+with col1:
+  st.header("Your MSBA Assistant is a click away!")
