@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit.components.v1 import html
 import hydralit_components as hc
 
-st.set_page_config(layout="wide", page_icon= "🤖")
+st.set_page_config(page_title="MSBA Assistant", layout="wide", page_icon= "🤖")
 
 st.markdown("""
 <style>
