@@ -12,4 +12,4 @@ with col2:
   html(trial, height=600)
   
 with col1:
-  st.header("Your MSBA Assistant is a click away!")
+  st.markdown("<h1 style='color: 1a92ff;'>Your MSBA Assistant is a click away!</h1>", unsafe_allow_html=True)
