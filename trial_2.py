@@ -4,19 +4,6 @@ st.set_page_config(page_title="MSBA Assistant", layout="wide", page_icon= "🤖"
 
 st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
 
-st.markdown("""
-<style>
-    #MainMenu, header {visibility: hidden;}
-
-    /* This code gets the first element on the sidebar,
-    and overrides its default styling */
-    section[data-testid="stSidebar"] div:first-child {
-        top: 0;
-        height: 100vh;
-    }
-</style>
-""",unsafe_allow_html=True)
-
 def get_base64_of_bin_file(bin_file):
     """
     function to read png file
