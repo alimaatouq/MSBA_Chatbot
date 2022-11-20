@@ -16,24 +16,9 @@ st.markdown("""
     }
 </style>
 """,unsafe_allow_html=True)
-padding = 0
 
-st.markdown(f"""
-    <style>
-        .reportview-container .main .block-container{{
-            padding-top: {padding}rem;
-        }}
-    </style>""",
-    unsafe_allow_html=True,
-)
+st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
 
-st.markdown(f""" <style>
-    .reportview-container .main .block-container{{
-        padding-top: {padding}rem;
-        padding-right: {padding}rem;
-        padding-left: {padding}rem;
-        padding-bottom: {padding}rem;
-    }} </style> """, unsafe_allow_html=True)
 
 def get_base64_of_bin_file(bin_file):
     """
