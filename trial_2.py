@@ -4,8 +4,7 @@ st.set_page_config(page_title="MSBA Assistant", layout="wide", page_icon= "🤖"
 
 st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([1, 4, 1])
-
+col1, col2, col3 = st.columns([1, 1.5, 1])
 trial = """<script src="//code.tidio.co/29ahjkkgzjmufusyxfai4rhrqquki8xg.js" async></script>"""
 
 with col2:
