@@ -4,19 +4,6 @@ import hydralit_components as hc
 
 st.set_page_config(layout="wide", page_icon= "🤖")
 
-st.markdown("""
-<style>
-    #MainMenu, header {visibility: hidden;}
-
-    /* This code gets the first element on the sidebar,
-    and overrides its default styling */
-    section[data-testid="stSidebar"] div:first-child {
-        top: 0;
-        height: 100vh;
-    }
-</style>
-""",unsafe_allow_html=True)
-
 st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
 
 
