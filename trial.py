@@ -6,7 +6,7 @@ st.set_page_config(layout="wide", page_icon= "🤖")
 
 st.markdown("""
 <style>
-    #MainMenu, header, footer {visibility: hidden;}
+    #MainMenu, header {visibility: hidden;}
 
     /* This code gets the first element on the sidebar,
     and overrides its default styling */
@@ -19,6 +19,14 @@ st.markdown("""
 
 st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
 
+padding = 0
+st.markdown(f""" <style>
+    .reportview-container .main .block-container{{
+        padding-top: {padding}rem;
+        padding-right: {padding}rem;
+        padding-left: {padding}rem;
+        padding-bottom: {padding}rem;
+    }} </style> """, unsafe_allow_html=True)
 
 def get_base64_of_bin_file(bin_file):
     """
