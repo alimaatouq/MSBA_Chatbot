@@ -13,3 +13,4 @@ with col2:
   
 with col1:
   st.markdown("<h1 style='color: #1e54e4;'>Your MSBA Assistant is a click away! 👉</h1>", unsafe_allow_html=True)
+  st.imagee("chat-bot-42.png")
