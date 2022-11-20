@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit.components.v1 import html
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide", page_icon= "🤖")
 st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
 def get_base64_of_bin_file(bin_file):
     """
