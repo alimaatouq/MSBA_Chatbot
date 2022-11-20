@@ -19,6 +19,15 @@ st.markdown("""
 padding = 0
 st.write('<style>div.block-container{padding-top:0rem;}</style>', unsafe_allow_html=True)
 
+st.markdown(f"""
+    <style>
+        .reportview-container .main .block-container{{
+            padding-top: {padding}rem;
+        }}
+    </style>""",
+    unsafe_allow_html=True,
+)
+
 st.markdown(f""" <style>
     .reportview-container .main .block-container{{
         padding-top: {padding}rem;
