@@ -5,14 +5,18 @@ import hydralit_components as hc
 st.set_page_config(layout="wide", page_icon= "🤖")
 st.write('<style>div.block-container{padding-top:0.5rem;}</style>', unsafe_allow_html=True)
 
-over_theme = {'menu_background':'#ECE4F5'}
+st.markdown("""
+<style>
+    #MainMenu, header, footer {visibility: hidden;}
 
-menu_id = hc.nav_bar(
-    override_theme=over_theme,
-    hide_streamlit_markers=True,
-    sticky_nav=True, #at the top or not
-    sticky_mode='sticky', #jumpy or not-jumpy, but sticky or pinned
-)
+    /* This code gets the first element on the sidebar,
+    and overrides its default styling */
+    section[data-testid="stSidebar"] div:first-child {
+        top: 0;
+        height: 100vh;
+    }
+</style>
+""",unsafe_allow_html=True)
 
 def get_base64_of_bin_file(bin_file):
     """
