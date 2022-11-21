@@ -22,7 +22,7 @@ page_style= """
 
 st.markdown(page_style, unsafe_allow_html=True)
 
-col1, col2, col3 = st.columns([1, 1.5, 1])
+col1, col2, col3 = st.columns([0.9, 1.2, 0.9])
 
 trial = """<script src="//code.tidio.co/29ahjkkgzjmufusyxfai4rhrqquki8xg.js" async></script>"""
 
